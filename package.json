@@ -1,0 +1,43 @@
+{
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  },
+  "name": "desktop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@3ksy/electron-pos-printer": "^1.4.9",
+    "@vueuse/core": "^10.4.1",
+    "@vueuse/electron": "^10.4.1",
+    "axios": "^1.5.0",
+    "core-js": "^3.8.3",
+    "element-plus": "^2.3.12",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^13.6.9",
+    "electron-devtools-installer": "^3.1.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
+  }
+}
